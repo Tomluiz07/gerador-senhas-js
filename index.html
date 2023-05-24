@@ -4,28 +4,49 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Gerador de Senhas</title>
 </head>
 <body>
   <main class="intro">
      <section class="intro-input">
-       <h1 class="tittle">Gerador de Senhas</h1>
-       <p>Utileze o nosso gerador online para criar uma senha forte e segura.</p>
-        <div class="input-txt">
-        <input type="text" name="password" id="password">
-       <div class="actions"> 
-        <button id="copy">C</button>
-        <button id="restart">R</button>
-       </div>
+        <section class="tittle">
+          <h1>Gerador de Senhas</h1>
+          <p>Utileze o nosso gerador online para criar uma senha forte e segura.</p>
+        </section>
+        <div class="input-div">
+         <input type="text" name="password" id="password">
+         <div>
+          <button id="Copy-1"> <img src="./imgs/copy.svg" alt=""></button>
+          <button id="restart"> <img src="./imgs/renew.svg" alt=""> </button>
+         </div>
         </div>
+        <span id="security-indicator"></span>  
+
+  <section class="personalizar">
+     <div>   
+        <h3>Personalizar</h3>
+         <p>Tamanho:<span id="Number-sizes">16</span></p>
+          <input type="range" name="password-length"  id="password-length" value="8" min="4" max="64" class="password" >
+      </div>
+      <div class="config">
+         <label class="check-container"></label>
+         <span class="text">Maiúsculas</span>
+         <input type="checkbox" id="uppercaseCheck" checked>
+         <label class="check-container"></label>
+         <span class="text">Números</span>
+         <input type="checkbox" id="Number-check" checked>
+         <label class="check-container"></label>
+         <span class="text">Simbolos</span>
+         <input type="checkbox" id="Simbolos-check">
+      </div>
+  </section>
        <div>
-         <h3>Personalizar</h3>
-         <p>tamanho: 8</p>
-         <input type="range" name="password-length" id="password-length" value="16" min="4" max="64">
          <button id="btn">Copiar Senha</button>
         </div>
-   
      </section>
   </main>
   <script src="./script.js">
