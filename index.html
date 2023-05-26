@@ -26,25 +26,38 @@
         </div>
         <span id="security-indicator"></span>  
 
-  <section class="personalizar">
-     <div>   
-        <h3>Personalizar</h3>
+  <section class="box-customizer">
+   
+        <h3 class="tittle">Personalizar</h3>
+      <div class="customizer">   
+        <div>
+        <div>
          <p>Tamanho:<span id="Number-sizes">16</span></p>
-          <input type="range" name="password-length"  id="password-length" value="8" min="4" max="64" class="password" >
+         <input type="range" name="password-length"  id="password-length" value="8" min="4" max="64" class="slider" >
+        </div>
       </div>
       <div class="config">
-         <label class="check-container"></label>
+      <label class="checkbox-container">
          <span class="text">Maiúsculas</span>
          <input type="checkbox" id="uppercaseCheck" checked>
-         <label class="check-container"></label>
-         <span class="text">Números</span>
-         <input type="checkbox" id="Number-check" checked>
-         <label class="check-container"></label>
-         <span class="text">Simbolos</span>
-         <input type="checkbox" id="Simbolos-check">
+         <span class="checkmark" ></span>
+      </label>
+         <label class="checkbox-container">
+            <span class="text">Números</span>
+            <input type="checkbox" id="Number-check" checked>
+            <span class="checkmark" ></span>
+         </label>
+        
+         <label class="checkbox-container">
+            <span class="text">Simbolos</span>
+            <input type="checkbox" id="Simbolos-check" checked>
+            <span class="checkmark" ></span>
+         </label>
+    
       </div>
+   </div>
   </section>
-       <div>
+       <div class="submit">
          <button id="btn">Copiar Senha</button>
         </div>
      </section>

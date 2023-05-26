@@ -73,4 +73,79 @@
 .tittle h1 {
    font-size: 2rem
 }
+.box-customizer{
+  padding: 2rem 1.5rem;
+}
 
+.customizer{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.slider {
+  appearance: none; 
+  width: 400px; 
+  margin-top: 1rem;
+  height: 20px;
+}
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+.checkbox-container input{
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox-container  .checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ddd;
+  transition: all 0.4s;
+}
+.checkbox-container .checkmark::after{
+  content: "";
+  display: none;
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.checkbox-container:hover input ~ .checkmark{
+  background-color: #cccccc;
+}
+.checkbox-container input:checked ~ .checkmark{
+  background-color: #9b51e0;
+}
+.submit {
+   display: flex;
+   justify-content: center;
+}
+.submit button{
+  background: #9b51e0;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1.7rem;
+  border-radius:8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.submit button:hover{
+ background-color: #a94bcb;
+}
